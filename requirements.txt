@@ -1,0 +1,4 @@
+h5py
+torchvision==0.10.0
+matplotlib
+torch==1.9.0

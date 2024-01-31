@@ -1,3 +1,9 @@
+# Video to bvh on Mac
+```
+This is from https://github.com/HW140701/VideoTo3dPoseAndBvh.git, What I do is to add requirement.txt which specify dependencies and version and remove the dependencies of CUDA so that it can run on Mac which actually work on my m1.
+Feel free to use it , no donation or else is needed, but leave me a star if you think it brings value to you.
+```
+
 # Video to 3DPose and Bvh motion file
 
 <p align="center"><img src="asset/wujing.gif" width="100%" alt="" /></p>

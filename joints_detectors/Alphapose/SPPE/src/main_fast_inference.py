@@ -24,10 +24,11 @@ class InferenNet(nn.Module):
     def __init__(self, kernel_size, dataset):
         super(InferenNet, self).__init__()
 
-        model = createModel().cuda()
+        #model = createModel().cuda()
+        model = createModel()
         print('Loading pose model from {}'.format('joints_detectors/Alphapose/models/sppe/duc_se.pth'))
         sys.stdout.flush()
-        model.load_state_dict(torch.load('joints_detectors/Alphapose/models/sppe/duc_se.pth'))
+        model.load_state_dict(torch.load('joints_detectors/Alphapose/models/sppe/duc_se.pth',map_location='cpu'))
         model.eval()
         self.pyranet = model
 

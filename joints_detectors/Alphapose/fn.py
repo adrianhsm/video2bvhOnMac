@@ -6,7 +6,9 @@ import time
 import cv2
 import numpy as np
 import torch
-from torch._six import string_classes, int_classes
+#from torch._six import string_classes, int_classes
+string_classes = str
+int_classes = int
 
 RED = (0, 0, 255)
 GREEN = (0, 255, 0)
